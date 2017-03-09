@@ -1,0 +1,123 @@
+*{
+	margin: 0 auto;
+}
+/*LAYOUT*/
+body, html{
+	width: 100%;
+	height: 100%;
+}
+
+.container-1{
+	width: 100%;
+	height: 100%;
+}
+
+.container-2{
+width:20vh; /* 20% screen size */
+height:20vh;
+border-radius: 50%; /* circle border */
+overflow: hidden; /* crop 1/3 */
+position:relative; /* crop 2/3 */
+z-index:1; /* crop 3/3 */
+}
+
+.background{
+	width: 50%;
+	height: 100%;
+}
+
+.center{
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+
+.left{
+	float: right;
+}
+
+.right{
+	float: left;
+}
+
+.orange{
+	background-color: #ff8601;
+}
+
+.cyan{
+	background-color: #418bb5;
+}
+
+.bar{
+	width: 25%;
+	height: 100%;
+}
+
+.yellow{
+	background-color: #fff724;
+	float: right;
+}
+
+.indigo{
+	background-color: #2b2c67;
+	float: left;
+}
+
+.square{
+	width: 3vmin;
+	height: 3vmin;
+	background-color: #ac5b0e;
+	z-index: 1;
+}
+
+
+/*ANIMATION*/
+.action{
+	animation: push 10s infinite linear;
+	transform-origin: left center;
+}
+
+@keyframes push{
+	10% {transform: translateY(-5vh);}
+	20% {transform: translate(0.5vw, -5vh) skewX(-10deg); }
+	30% {transform: translate(0.5vw, -5vh) skewX(-10deg);;}
+	40% {transform: translate(0vw, -5vh);}
+	50% {transform: initial;}
+	60% {transform: translateY(5vh);}
+	70% {transform: translate(0.5vw, 5vh) skewX(10deg);}
+	80% {transform: translate(0.5vw, 5vh) skewX(10deg);}
+	90% {transform: translate(0vw, 5vh);}
+	100% {transform: initial;}
+}
+
+.reaction{
+	animation: pushback 10s 1s infinite linear;
+	transform-origin: right center;
+}
+
+@keyframes pushback{
+	10% {transform: skewX(-10deg);}
+	20% {transform: skewX(-10deg) translateY( -5vh);}
+	30% {transform: translateY(-5vh);}
+	40% {transform: initial;}
+	50% {transform: initial;}
+	60% {transform: skewX(10deg);}
+	70% {transform: skewX(10deg) translateY(5vh);}
+	80% {transform: translateY(5vh);}
+	90% {transform: inherit;}
+	100% {transform: initial;}
+}
+
+.skew{
+	animation: skew 10s 1s infinite linear; 
+}
+
+@keyframes skew{
+	10% {transform: skewX(-10deg);}
+	20% {transform: skewX(-10deg);}
+	30% {transform: inherit;}
+	50% {transform: inherit;}
+	60% {transform: skewX(10deg);}
+	70% {transform: skewX(10deg);} 
+	80% {transform: inherit;}
+}

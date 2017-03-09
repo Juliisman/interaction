@@ -1,0 +1,100 @@
+body, html{
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+.container-1 {
+width:100%;
+height:100%;
+}
+
+.container-2{
+width:20vh; /* 20% screen size */
+height:20vh;
+border-radius: 50%; /* circle border */
+overflow: hidden; /* crop 1/3 */
+position:relative; /* crop 2/3 */
+z-index:1; /* crop 3/3 */
+}
+
+.all{
+	padding: .5vw
+}
+
+.square{
+/*	display: flex;
+	justify-content: center;
+	align-items: center;*/
+	float: left;
+	margin: 1vw;
+}
+
+.outer{
+	width: 31vw;
+	height: 31vw;
+}
+.middle{
+	width: 20vw;
+	height: 20vw;
+}
+.inner{
+	width: 10vw;
+	height: 10vw;
+}
+
+
+.orange{
+	background-color: orange;
+}
+.yellow{
+	background-color: #FFD700;
+}
+.red{
+	background-color: #B22222;
+}
+
+
+.move{
+	animation: dance 2s infinite linear;
+}
+
+.one{
+	animation: dancer 2s infinite linear;
+
+}
+.delay-one{
+	animation-delay: .2s;
+}
+.delay-two{
+	animation-delay: .4s;
+}
+.delay-three{
+	animation-delay: .6s;
+}
+.delay-four{
+	animation-delay: .8s;
+}
+.delay-five{
+	animation-delay: 1s;
+}
+.delay-six{
+	animation-delay: 1.2s;
+}
+.delay-seven{
+	animation-delay: 1.4s;
+}
+.delay-eight{
+	animation-delay: 1.6s;
+}
+
+@keyframes dance{
+	25% {transform: translateX(45%);}
+	50% {transform: translate(45%, 45%);}
+	75% {transform: translateY(45%);}
+}
+
+@keyframes dancer{
+	25% {transform: translateY(80%);}
+	50% {transform: translate(80%, 80%);}
+	75% {transform: translateX(80%);}
+}
