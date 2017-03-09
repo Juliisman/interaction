@@ -79,13 +79,13 @@ z-index:1; /* crop 3/3 */
 
 @keyframes push{
 	10% {transform: translateY(-30vh);}
-	20% {transform: translate(4vw, -30vh) skewX(-10deg); }
-	30% {transform: translate(4vw, -30vh) skewX(-10deg);;}
+	20% {transform: translate(0vw, -30vh) skewX(-10deg); }
+	30% {transform: translate(0vw, -30vh) skewX(-10deg);;}
 	40% {transform: translate(0vw, -30vh);}
 	50% {transform: initial;}
 	60% {transform: translateY(30vh);}
-	70% {transform: translate(4vw, 30vh) skewX(10deg);}
-	80% {transform: translate(4vw, 30vh) skewX(10deg);}
+	70% {transform: translate(0vw, 30vh) skewX(10deg);}
+	80% {transform: translate(0vw, 30vh) skewX(10deg);}
 	90% {transform: translate(0vw, 30vh);}
 	100% {transform: initial;}
 }
