@@ -1,0 +1,14 @@
+query: ["breakfast"]
+result: Cocoa Puffs, Nesquick, Cinnamon French Toast Crunch, Fruity Pebbles
+
+query: ["Flower"] ["dishware"]
+result: Flower Main Dish Plates, Flower Dessert Plates, Flower Bowls
+
+query: ["Colored"] ["dishware"]
+result: Colored Main Dish Plates, Colored Dessert Plates, Colored Bowls, Colored Mugs
+
+query: ["condiments"]
+result: Nutella, Sugar, Honey, Balsamic Vinegar, Extra Virgin Olive Oil, Salt
+
+query: ["glasses"] on ["right-side"]
+result: Standard Wine Glasses, Small Glasses, Tall Glasses
